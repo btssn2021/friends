@@ -1,6 +1,8 @@
 #include <stdio.h>
 /********variables globales*****/
-char mesamis [6][255];
+const nblignes=6;
+const nbcolonnes=255;
+char mesamis [nblignes][nbcolonnes];
 int nbamis=0;
 /*******************prototypes******************/
 void saisieAmis(int nbamis);
@@ -35,7 +37,15 @@ int choix=0;
     switch (choix)
     {
         case 1:
-            saisieAmis(nbamis);
+            if(nbamis>5) //si plus de 5
+            {
+                printf("Vousn ne pouvez plus saisir d'amis\n");
+
+            }
+            else {
+                saisieAmis(nbamis);
+            }
+            menu();
             break;
 
         case 2:
