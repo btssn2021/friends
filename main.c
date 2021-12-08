@@ -1,7 +1,7 @@
 #include <stdio.h>
 /********variables globales*****/
-const nblignes=6;
-const nbcolonnes=255;
+const int nblignes=6;
+const int nbcolonnes=255;
 char mesamis [nblignes][nbcolonnes];
 int nbamis=0;
 /*******************prototypes******************/
